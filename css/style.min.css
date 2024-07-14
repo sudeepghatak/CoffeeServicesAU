@@ -311,7 +311,9 @@ a.hover-reverse:hover {
 }
 .machine-heading,
 .probootstrap-header-social li a {
-	color: #000
+	color: gold;
+	background-color:rgba(20, 2, 0, 0.8) ;
+	padding: 5px;
 }
 .probootstrap-header-social {
 	position: absolute;
@@ -1098,8 +1100,6 @@ yellow.yellow {
 	resize: vertical
 }
 .probootstrap-animate {
-	opacity: 0;
-	visibility: hidden
 }
 .probootstrap-contact-info,
 .with-icon {
@@ -1188,6 +1188,9 @@ yellow.yellow {
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.5
+}
+.topspace {
+	margin-top: 150px;
 }
 .flexslider .probootstrap-sub-wrap a {
 	color: rgba(255, 255, 255, .8);
@@ -1291,6 +1294,13 @@ yellow.yellow {
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%)
+}
+h2.heading.probootstrap-animate {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: orange;
+	font-size: 45px;
+	line-height: 80px;
 }
 .flexslider .flex-direction-nav a.flex-next:before {
 	

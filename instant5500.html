@@ -31,43 +31,8 @@
 </head>
 
 <body>
-  <!-- START: header -->
-  <section>
-    <div class="text-right topbar">
-      <li class="email-top">
-        <i class="icon-mail"></i><a class="email"
-          href="mailto:sales@coffeeservices.co.nz">sales@coffeeservices.co.nz</a>
-      </li>
-      <li><i class="icon-phone2"></i><span>0800 837 848</span></li>
-    </div>
-  </section>
-  <div class="probootstrap-loader"></div>
-
-  <header role="banner" class="probootstrap-header">
-    <div class="container">
-      <a href="index.html"><img class="logo" src="img/logo.png" /></a>
-
-      <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
-      <div class="mobile-menu-overlay"></div>
-
-      <nav role="navigation" class="probootstrap-nav hidden-xs">
-        <ul class="probootstrap-main-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="machines.html">Machines</a></li>
-          <li><a href="rent-free-machines.html">Rent Free Machines</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li>
-            <a href="coffee-tea-supplies.html">Coffee and Tea Supplies</a>
-          </li>
-          <li>
-            <a class="btn btn-primary btn-sm" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- END: header -->
+  <header-component></header-component>
+  <div class="topspace"></div>
   <section class="probootstrap-slider machine-flexslider">
     <div>
       <div class="container">
@@ -207,90 +172,27 @@
     </div>
   </section>
 
-  <footer class="probootstrap-footer probootstrap-bg" style="background-image: url(img/3.jpg)">
-    <div class="container">
-      <div class="mb60">
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">About Our Company</h4>
-            <p>
-              For us at Coffee Services Coffee has always been a friend, a
-              symbol of the pleasure of getting together, an excuse to catch
-              up and talk… but also to take a break, even alone.
-            </p>
-            <p><a href="about.html">Read more...</a></p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">Coffee and Tea Supplies</h4>
-            <ul class="stack-link">
-              <li><a href="coffee-beans.html">Coffee Beans</a></li>
-              <li><a href="milk.html">Milk</a></li>
-              <li><a href="chocolate.html">Chocolate</a></li>
-              <li>
-                <a href="instant-lemon-tea.html">Instant Lemon Tea Premix</a>
-              </li>
-              <li>
-                <a href="instant-plain-tea.html">Instant Plain Tea Premix</a>
-              </li>
-              <li>
-                <a href="granulated-coffee.html">Granulated Freeze Dried Coffee</a>
-              </li>
-              <li><a href="black-tea.html">Instant Black Tea premix</a></li>
-              <li><a href="tea-ginger.html">Instant Ginger Tea</a></li>
-              <li><a href="chai-latte.html">Chai Latte</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">Services</h4>
-            <ul class="stack-link">
-              <li><a href="partner.html">Become a partner</a></li>
-              <li>
-                <a href="coffee-machines-rental.html">Rent a machine</a>
-              </li>
-              <li><a href="maintenance.html">Repair and maintenance</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="probootstrap-footer-widget">
-            <h4 class="heading">Contact Us</h4>
-            <div>
-              <div>Address: 440 Springs Rd Prebbleton Christchurch 7604</div>
-              <div>Phone: 0800 837 848</div>
-              <div>Email: sales@coffeeservices.co.nz</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <div class="col-md-6">
-          <div class="probootstrap-footer-widget"></div>
-        </div>
-        <div class="col-md-6">
-          <div class="probootstrap-footer-widget right">
-            <ul class="probootstrap-footer-social"></ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="probootstrap-section">
-    <div class="container">
-      <a href="index.html"><img class="logo-small" src="img/logo.png" /></a>
-    </div>
-  </div>
-
-  <div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
-  </div>
-
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
+  <footer-component></footer-component>
+  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/hoverIntent.js"></script>
+  <script src="js/superfish.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+  <sticky-component></sticky-component>
 </body>
 
 </html>

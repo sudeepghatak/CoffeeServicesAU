@@ -1,544 +1,278 @@
-(function() {
-	'use strict';
 
-	/*----------------------------------------
-		Detect Mobile
-	----------------------------------------*/
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
+$(document).ready(function(){
+	"use strict";
 
-	/*----------------------------------------
-		Back to top
-	----------------------------------------*/
-	var backToTop = function() {
-		$('.js-backtotop').on('click', function(e){
-			e.preventDefault();
-			$('html, body').animate({
-	      scrollTop: $('body').offset().top
-	    }, 700, 'easeInOutExpo');
-		});
-	}
-
-	var nextScroll = function() {
-		$('.js-next').on('click', function(e){
-			e.preventDefault();
-			$('html, body').animate({
-      	scrollTop: $( $.attr(this, 'href') ).offset().top
-    	}, 700, 'easeInOutExpo');
-		});
-
-		$(window).scroll(function(){
-
-			var $this = $(this),
-				st = $this.scrollTop();
-
-			if (st > 10) {
-				$('.js-next').addClass('probootstrap-sleep');
-			} else {
-				$('.js-next').removeClass('probootstrap-sleep');
-			}
-
-		});
-	}
-
-	/*----------------------------------------
-		Burger Menu
-	----------------------------------------*/	
-	var mobileMenuControl = function() {
-		
-
-		// click burger menu
-		$('.probootstrap-burger-menu').on('click', function(e){
-			e.preventDefault();
-			if ($('body').hasClass('show')) {
-				$('.probootstrap-burger-menu').removeClass('active');
-				$('body').removeClass('show');
-			} else {
-				$('.probootstrap-burger-menu').addClass('active');
-				$('body').addClass('show');
-			}
-		});
-
-		if ($(window).width() > 766) {
-			$('body').removeClass('probootstrap-mobile-menu-active');
-			$('.probootstrap-burger-menu').removeClass('active');
-		} else {
-			$('body').addClass('probootstrap-mobile-menu-active');
-		}
-
-		$(window).resize(function(){
-			if ($(window).width() > 766) {
-				$('body').removeClass('probootstrap-mobile-menu-active');
-				$('.probootstrap-burger-menu').removeClass('active');
-			} else {
-				$('body').addClass('probootstrap-mobile-menu-active');
-			}
-		});
-
-		// Click outside of the Mobile Menu content
-		$(document).click(function (e) {
-	    var container = $(".probootstrap-nav, .probootstrap-burger-menu");
-	    
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('show') ) {
-					$('body').removeClass('show');
-					$('.probootstrap-burger-menu').removeClass('active');
-				}
-	    }
-		});
-		
-
-	};
-
-	/*----------------------------------------
-		Search
-	----------------------------------------*/
-	var searchControl = function() {
-		$('.js-probootstrap-search').on('click', function(){
-			$('#probootstrap-search').addClass('active');
-			setTimeout(function(){
-				$('#probootstrap-search').find('#search').focus().select();
-			}, 500);
-		});
-		$('.js-probootstrap-close').on('click', function(){
-			$('#probootstrap-search').removeClass('active');
-		});
-	};
-
-	/*----------------------------------------
-		Menu Hover
-	----------------------------------------*/
-	var menuHover = function() {
-		if (!isMobile.any()) {
-			$('.probootstrap-navbar .navbar-nav li.dropdown').hover(function() {
-			  $(this).find('> .dropdown-menu').stop(true, true).delay(200).fadeIn(500).addClass('animated-fast fadeInUp');
-			}, function() {
-				$(this).find('> .dropdown-menu').stop(true, true).fadeOut(200).removeClass('animated-fast fadeInUp')
-			});
-		}
-	}
-	/*----------------------------------------
-		Carousel
-	----------------------------------------*/
-	var owlCarousel = function(){
-
-		var owl1 = $('.owl-carousel-carousel'),
-			 	owl2 = $('.owl-carousel-carousel2'),
-			 	owl3 = $('.owl-carousel-carousel3');
-		owl1.owlCarousel({
-			items: 3,
-			loop: true,
-			margin: 20,
-			nav: false,
-			dots: false,
-			smartSpeed: 800,
-			autoHeight: true,
-			navText: [
-		      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
-		      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
-	     	],
-	     	responsive:{
-	        0:{
-	            items:1
-	        },
-	        400:{
-	            items:1
-	        },
-	        600:{
-	            items:2
-	        },
-	        1000:{
-	            items:3
-	        }
-	    	}
-		});
-
-		owl2.owlCarousel({
-			items: 3,
-			loop: true,
-			margin: 20,
-			nav: false,
-			dots: false,
-			smartSpeed: 800,
-			autoHeight: true,
-			navText: [
-		      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
-		      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
-	     	],
-	     	responsive:{
-	        0:{
-	            items:1
-	        },
-	        400:{
-	            items:1
-	        },
-	        600:{
-	            items:2
-	        },
-	        1000:{
-	            items:3
-	        }
-	    	}
-		});
-
-		owl3.owlCarousel({
-			items: 3,
-			loop: true,
-			margin: 20,
-			nav: false,
-			dots: false,
-			smartSpeed: 800,
-			autoHeight: true,
-			navText: [
-		      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
-		      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
-	     	],
-	     	responsive:{
-	        0:{
-	            items:1
-	        },
-	        400:{
-	            items:1
-	        },
-	        600:{
-	            items:2
-	        },
-	        1000:{
-	            items:3
-	        }
-	    	}
-		});
+	var window_width 	 = $(window).width(),
+	window_height 		 = window.innerHeight,
+	header_height 		 = $(".default-header").height(),
+	header_height_static = $(".site-header.static").outerHeight(),
+	fitscreen 			 = window_height - header_height;
 
 
-		// Custom Navigation Events
-		$('.probootstrap-owl-next').click(function(e){
-		  owl1.trigger('next.owl.carousel');
-		  e.preventDefault();
-		});
-		$('.probootstrap-owl-prev').click(function(e){
-		  owl1.trigger('prev.owl.carousel');
-		  e.preventDefault();
-		});
+	$(".fullscreen").css("height", window_height)
+	$(".fitscreen").css("height", fitscreen);
 
-		// Custom Navigation Events
-		$('.probootstrap-owl-next2').click(function(e){
-		  owl2.trigger('next.owl.carousel');
-		  e.preventDefault();
-		});
-		$('.probootstrap-owl-prev2').click(function(e){
-		  owl2.trigger('prev.owl.carousel');
-		  e.preventDefault();
-		});
-
-		// Custom Navigation Events
-		$('.probootstrap-owl-next3').click(function(e){
-		  owl3.trigger('next.owl.carousel');
-		  e.preventDefault();
-		});
-		$('.probootstrap-owl-prev3').click(function(e){
-		  owl3.trigger('prev.owl.carousel');
-		  e.preventDefault();
-		});
-
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			loop: true,
-			margin: 20,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true,
-			autoplay: true,
-			navText: [
-		      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
-		      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
-	    ],
-	    responsive:{
-	    	0:{
-		      items: 1
-			  },
-			  980:{
-		      items: 1
-			  },
-			  1100:{
-		      items: 2
-			  }
-			}
-		});
-
-		var owl = $('.owl-work');
-		owl.owlCarousel({
-			stagePadding: 150,
-			loop: true,
-			margin: 20,
-			nav: true,
-			dots: false,
-			mouseDrag: false,
-			autoWidth: true,
-			autoHeight: true,
-	    autoplay: true,
-	    autoplayTimeout:2000,
-	    autoplayHoverPause:true,
-			navText: [	
-				"<i class='icon-chevron-thin-left'></i>",
-				"<i class='icon-chevron-thin-right'></i>"
-			],
-			responsive:{
-			  0:{
-		      items:1,
-		      stagePadding: 10
-			  },
-			  500:{
-			  	items:2,
-		      stagePadding: 20
-			  },
-			  600:{
-		      items:2,
-		      stagePadding: 40
-			  },
-			  800: {
-			  	items:2,
-			  	stagePadding: 100
-			  },
-			  1100:{
-		      items:3
-			  },
-			  1400:{
-		      items:4
-			  },
-			}
-		});
-	};
-
-	
-	/*----------------------------------------
-		Slider
-	----------------------------------------*/
-	var flexSlider = function() {
-	  $('.flexslider').flexslider({
-	    animation: "fade",
-	    prevText: "",
-	    nextText: "",
-	    slideshow: true
-	  });
-	}
-
-	
-	/*----------------------------------------
-		Content Animation
-	----------------------------------------*/
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.probootstrap-animate').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('probootstrap-animated') ) {
-				
-				i++;
-
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
-
-					$('body .probootstrap-animate.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn probootstrap-animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft probootstrap-animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight probootstrap-animated');
-							} else {
-								el.addClass('fadeInUp probootstrap-animated');
-							}
-							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
-					});
-					
-				}, 200);
-				
-			}
-
-		} , { offset: '95%' } );
-	};
-
-	
-
-	/*----------------------------------------
-		Counter Animation
-	----------------------------------------*/
-	var counter = function() {
-		$('.js-counter').countTo({
-			 formatter: function (value, options) {
-	      return value.toFixed(options.decimals);
-	    },
-		});
-	};
-	var counterWayPoint = function() {
-		if ($('#probootstrap-counter').length > 0 ) {
-			$('#probootstrap-counter').waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('probootstrap-animated') ) {
-					setTimeout( counter , 400);					
-					$(this.element).addClass('probootstrap-animated');
-				}
-			} , { offset: '90%' } );
-		}
-	};
-
-	var magnificPopupControl = function() {
-
-
-		$('.image-popup').magnificPopup({
-			type: 'image',
-			removalDelay: 300,
-			mainClass: 'mfp-with-zoom',
-			gallery:{
-				enabled:true
-			},
-			zoom: {
-				enabled: true, // By default it's false, so don't forget to enable it
-
-				duration: 300, // duration of the effect, in milliseconds
-				easing: 'ease-in-out', // CSS transition easing function
-
-				// The "opener" function should return the element from which popup will be zoomed in
-				// and to which popup will be scaled down
-				// By defailt it looks for an image tag:
-				opener: function(openerElement) {
-				// openerElement is the element on which popup was initialized, in this case its <a> tag
-				// you don't need to add "opener" option if this code matches your needs, it's defailt one.
-				return openerElement.is('img') ? openerElement : openerElement.find('img');
-				}
-			}
-		});
-
-		$('.with-caption').magnificPopup({
-			type: 'image',
-			closeOnContentClick: true,
-			closeBtnInside: false,
-			mainClass: 'mfp-with-zoom mfp-img-mobile',
-			image: {
-				verticalFit: true,
-				titleSrc: function(item) {
-					return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-				}
-			},
-			zoom: {
-				enabled: true
-			}
-		});
-
-
-		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-
-      fixedContentPos: false
-    });
-	}
-
-	/*----------------------------------------
-		Stellar
-	----------------------------------------*/
-	var stellarInit = function() {
-		if( !isMobile.any() ) {
-			$(window).stellar();
-		}
-	};
-
-
-	var progressBarControl = function() {
-		if ( $(".progress-bar-s2").length > 0 ) {
-      var $progress_bar = $('.progress-bar-s2');
-
-      $progress_bar.appear();
-      $(document.body).on('appear', '.progress-bar-s2', function() {
-          var current_item = $(this);
-          if (!current_item.hasClass('appeared')) {
-              var percent = current_item.data('percent');
-              current_item.append('<span>' + percent + '%' + '</span>').css('width', percent + '%').addClass('appeared');
-          }
-          
-      });
+     if(document.getElementById("default-select")){
+          $('select').niceSelect();
     };
-	}
 
-	// Loading page
-	var loaderPage = function() {
-		$(".probootstrap-loader").fadeOut("slow");
-	};
+    $('.img-pop-up').magnificPopup({
+        type: 'image',
+        gallery:{
+        enabled:true
+        }
+    });
 
-	var goToTop = function() {
+    $('.img-pop-home').magnificPopup({
+        type: 'image',
+        gallery:{
+        enabled:true
+        }
+    });
 
-		$('.js-gotop').on('click', function(event){
-			
-			event.preventDefault();
 
-			$('html, body').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			
-			return false;
-		});
 
-		$(window).scroll(function(){
-			console.log('scrolling');
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
-			} else {
-				$('.js-top').removeClass('active');
-			}
 
-		});
-	
-	};
+    $('.play-btn').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+ 
+    //  Counter Js 
 
-	/*----------------------------------------
-		Document Ready 
-	----------------------------------------*/
-	$(document).ready(function(){
-		menuHover();
-		counterWayPoint();
-		contentWayPoint();
-		backToTop();
-		searchControl();
-		magnificPopupControl();
-		stellarInit();
-		progressBarControl();
-		mobileMenuControl();
-		nextScroll();
-		loaderPage();
-		goToTop();
-	});
 
-	$(window).load(function(){
-		owlCarousel();
-		flexSlider();
-	});
+    if ($('.single-counter').length) {
+      $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+      });    
+    }
 
-	
+  // Initiate superfish on nav menu
+  $('.nav-menu').superfish({
+    animation: {
+      opacity: 'show'
+    },
+    speed: 400
+  });
 
-})();
+  // Mobile Navigation
+  if ($('#nav-menu-container').length) {
+    var $mobile_nav = $('#nav-menu-container').clone().prop({
+      id: 'mobile-nav'
+    });
+    $mobile_nav.find('> ul').attr({
+      'class': '',
+      'id': ''
+    });
+    $('body').append($mobile_nav);
+    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>');
+    $('body').append('<div id="mobile-body-overly"></div>');
+    $('#mobile-nav').find('.menu-has-children').prepend('<i class="lnr lnr-chevron-down"></i>');
+
+    $(document).on('click', '.menu-has-children i', function(e) {
+      $(this).next().toggleClass('menu-item-active');
+      $(this).nextAll('ul').eq(0).slideToggle();
+      $(this).toggleClass("lnr-chevron-up lnr-chevron-down");
+    });
+
+    $(document).on('click', '#mobile-nav-toggle', function(e) {
+      $('body').toggleClass('mobile-nav-active');
+      $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
+      $('#mobile-body-overly').toggle();
+    });
+
+    $(document).click(function(e) {
+      var container = $("#mobile-nav, #mobile-nav-toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
+          $('#mobile-body-overly').fadeOut();
+        }
+      }
+    });
+  } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
+    $("#mobile-nav, #mobile-nav-toggle").hide();
+  }
+
+  // Smooth scroll for the menu and links with .scrollto classes
+  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
+        var top_space = 0;
+
+        if ($('#header').length) {
+          top_space = $('#header').outerHeight();
+
+          if( ! $('#header').hasClass('header-fixed') ) {
+            top_space = top_space;
+          }
+        }
+
+        $('html, body').animate({
+          scrollTop: target.offset().top - top_space
+        }, 1500, 'easeInOutExpo');
+
+        if ($(this).parents('.nav-menu').length) {
+          $('.nav-menu .menu-active').removeClass('menu-active');
+          $(this).closest('li').addClass('menu-active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('lnr-times lnr-bars');
+          $('#mobile-body-overly').fadeOut();
+        }
+        return false;
+      }
+    }
+  });
+
+
+    $(document).ready(function() {
+
+    $('html, body').hide();
+
+        if (window.location.hash) {
+
+        setTimeout(function() {
+
+        $('html, body').scrollTop(0).show();
+
+        $('html, body').animate({
+
+        scrollTop: $(window.location.hash).offset().top
+
+        }, 1000)
+
+        }, 0);
+
+        }
+
+        else {
+
+        $('html, body').show();
+
+        }
+
+    });
+  
+
+  // Header scroll class
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  })
+
+
+    $('.active-course-carusel').owlCarousel({
+        items:3,
+        loop:true,
+        margin:30,
+        dots: true,
+        nav:true,
+        navText: ["<span class='lnr lnr-arrow-up'></span>",
+        "<span class='lnr lnr-arrow-down'></span>"],        
+            responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            900: {
+                items: 3,
+            }
+
+        }
+    });
+
+        $('.active-tstimonial-carusel').owlCarousel({
+        items:3,
+        margin:30,
+        autoplay:true,
+        loop:true,
+        dots: true,       
+            responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            900: {
+                items: 3,
+            }
+
+        }
+    });
+
+
+
+
+    //  Start Google map 
+
+            // When the window has finished loading create our google map below
+
+            if(document.getElementById("map")){
+            
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+    }
+
+
+        $(document).ready(function() {
+            $('#mc_embed_signup').find('form').ajaxChimp();
+        });      
+
+
+
+
+
+
+
+
+ });

@@ -90,11 +90,22 @@ img.about-us {
   font-weight: bold;
   border-radius: 5px;
 }
-
+.topspace {
+  margin-top: 150px;
+}
 .consumable-content {
   margin-bottom: 20px;
 }
 
 .probootstrap-footer > .container {
   margin-top: 20px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 36px;
 }

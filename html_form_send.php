@@ -72,7 +72,7 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- place your own success html below -->
 <h5>Thank you for contacting us. We will be in touch with you very soon.</h5>
-<a href="http://coffeeservices.co.nz">Back to site</a>
+<a href="http://coffeeandteavending.com.au">Back to site</a>
  
 <?php
 }
