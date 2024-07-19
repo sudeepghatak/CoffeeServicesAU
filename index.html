@@ -9,8 +9,7 @@
 	<meta name="keywords" content="">
 	<meta charset="UTF-8">
 	<title>Coffee</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -20,13 +19,46 @@
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 
-
 </head>
 
 <body>
+	<!--Header start-->
+	<header id="header" id="home">
+		<div class="header-top">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-lg-6 col-sm-4 col-8 header-top-right no-padding">
+						<ul>
+							<li>Mon-Fri: 8am to 2pm</li>
+							<li>Sat-Sun: 11am to 4pm</li>
+							<li><a href="tel:(012) 6985 236 7512">(012) 6985 236 7512</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/new/5_1.png" width="85" height="100" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="machines.html">Machines</a></li>
+						<li><a href="services.html">Our Services</a></li>
+						<li><a href="coffee-tea-supplies.html">Coffee & Tea Supplies</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+				<div class="hamburger">
+					<i class="fa fa-bars" onclick="javascript:toggleMenu()"></i>
+				</div>
 
-<!-- #header start -->
-		<header-component></header-component><!-- #header -->
+			</div>
+		</div>
+	</header>
 	<!--Header end-->
 
 	<!-- start banner Area -->
@@ -36,7 +68,7 @@
 				<div class="banner-content col-lg-7">
 					<h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
 					<h1>Start your day with <br>a black Coffee</h1>
-					
+
 				</div>
 			</div>
 		</div>
@@ -142,7 +174,10 @@
 	<script src="js/mail-script.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/components.js"></script>
+	<script src="js/responsive.js"></script>
+
 	<sticky-component></sticky-component>
+	<script src="js/responsive.js"></script>
 </body>
 
 </html>

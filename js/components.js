@@ -1,15 +1,4 @@
-class HeaderComponent extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                this.shadowRoot.innerHTML = data;
-            })
-            .catch(error => console.error('Error loading the header:', error));
-    }
-}
+
 
 class FooterComponent extends HTMLElement {
     constructor() {
@@ -33,9 +22,9 @@ class StickyComponent extends HTMLElement {
             .then(data => {
                 this.shadowRoot.innerHTML = data;
             })
-            .catch(error => console.error('Error loading the footer:', error));
+            .catch(error => console.error('Error loading the sticky:', error));
     }
 }
-customElements.define('header-component', HeaderComponent);
+
 customElements.define('footer-component', FooterComponent);
 customElements.define('sticky-component', StickyComponent);

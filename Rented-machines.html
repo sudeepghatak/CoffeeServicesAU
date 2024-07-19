@@ -7,13 +7,20 @@
   <title>Coffee Services</title>
   <meta name="description" content="Coffee Services,Christchurch,NZ,Vending Coffee machines, Rajiv Gulati">
   <meta name="keywords" content="Coffee Services,Christchurch,NZ,Vending Coffee machines, Rajiv Gulati">
-
+  <link rel="shortcut icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/styles-merged.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="css/linearicons.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/main.css">
   <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -24,39 +31,44 @@
 </head>
 
 <body>
-
-  <!-- START: header -->
-
-  <div class="text-right topbar">
-    <li class="email-top"><i class="icon-mail"></i><a class="email"
-        href="mailto:sales@coffeeservices.co.nz">sales@coffeeservices.co.nz</a></li>
-    <li><i class="icon-phone2"></i><span>0800 837 848</span></li>
-  </div>
-  </section>
-  <div class="probootstrap-loader"></div>
-
-  <header role="banner" class="probootstrap-header">
+  <!--Header start-->
+  <header id="header" id="home">
+    <div class="header-top">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6 col-sm-4 col-8 header-top-right no-padding">
+            <ul>
+              <li>Mon-Fri: 8am to 2pm</li>
+              <li>Sat-Sun: 11am to 4pm</li>
+              <li><a href="tel:(012) 6985 236 7512">(012) 6985 236 7512</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <a href="index.html"><img class="logo" src="img/logo.png"></a>
+      <div class="row align-items-center justify-content-between d-flex">
+        <div id="logo">
+          <a href="index.html"><img src="img/new/5_1.png" width="85" height="100" alt="" title="" /></a>
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="machines.html">Machines</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="coffee-tea-supplies.html">Coffee & Tea Supplies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+        <div class="hamburger">
+          <i class="fa fa-bars" onclick="javascript:toggleMenu()"></i>
+        </div>
 
-      <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
-      <div class="mobile-menu-overlay"></div>
-
-      <nav role="navigation" class="probootstrap-nav hidden-xs">
-        <ul class="probootstrap-main-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="active"><a href="machines.html">Machines</a></li>
-          <li><a href="Rented-machines.html">Rent Free Machines</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="coffee-tea-supplies.html">Coffee and Tea Supplies</a></li>
-          <li><a class="btn btn-primary btn-sm" href="contact.html">Contact</a></li>
-        </ul>
-
-      </nav>
+      </div>
     </div>
   </header>
-  <!-- END: header -->
+  <!--Header end-->
 
   <!--END: slider  -->
   <section class="probootstrap-section">
@@ -272,9 +284,28 @@
   </div>
 
 
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
+  <!-- start footer Area -->
+  <footer-component></footer-component>
+  <!-- End footer Area -->
+
+  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+
+  <script src="js/easing.min.js"></script>
+  <script src="js/hoverIntent.js"></script>
+  <script src="js/superfish.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
 
 </body>
 
