@@ -22,11 +22,10 @@ footer a {
 .probootstrap-section-grey,.probootstrap-section-grey-header {
     position: relative;
     z-index: 2;
-    background: #f5f7f6;
+    background: beige;
+	display: flex;
 }
-.probootstrap-section-grey{
-	padding-bottom: 100px;
-}
+
 .logo{
 	display: block;
 	margin-left: auto;
@@ -311,8 +310,7 @@ a.hover-reverse:hover {
 }
 .machine-heading,
 .probootstrap-header-social li a {
-	color: gold;
-	background-color:rgba(20, 2, 0, 0.8) ;
+	color: orange;
 	padding: 5px;
 }
 .probootstrap-header-social {

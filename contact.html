@@ -4,12 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coffee Services</title>
-  <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-  <meta name="keywords"
-    content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Open+Sans:300,400" rel="stylesheet">
+  <title>Coffee and Tea Vending</title>
+
+
   <link rel="stylesheet" href="css/styles-merged.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -22,13 +19,81 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/x-icon" href="img/new/5_1.png">
   <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   <!-- Global site tag (gtag.js) - Google Ads: 928323235 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-928323235"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-928323235'); </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-928323235');
+  </script>
+  <style>
+    .contact-info {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .contact-info h4.price {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-info ul.with-icon {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-info ul.with-icon li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-info ul.with-icon li i {
+      margin-right: 10px;
+      font-size: 1.2em;
+      color: #ff6b6b;
+    }
+
+    .contact-info ul.with-icon li a.email {
+      text-decoration: none;
+      color: #ff6b6b;
+      transition: color 0.3s;
+    }
+
+    .contact-info ul.with-icon li a.email:hover {
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .contact-info {
+        padding: 15px;
+      }
+
+      .contact-info h4.price {
+        font-size: 1.3em;
+      }
+
+      .contact-info ul.with-icon li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-info ul.with-icon li i {
+        margin-bottom: 5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -37,10 +102,9 @@
     <div class="header-top">
       <div class="container">
         <div class="row justify-content-end">
-          <div class="col-lg-6 col-sm-4 col-8 header-top-right no-padding">
+          <div class="col-lg-6 col-sm-8 col-12 header-top-right no-padding">
             <ul>
-              <li>Mon-Fri: 8am to 2pm</li>
-              <li>Sat-Sun: 11am to 4pm</li>
+              <li><a href="mailto:sales@coffeeandteavending.com.au">sales@coffeeandteavending.com.au</a></li>
               <li><a href="tel:(012) 6985 236 7512">(012) 6985 236 7512</a></li>
             </ul>
           </div>
@@ -50,125 +114,82 @@
     <div class="container">
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
-          <a href="index.html"><img src="img/new/5_1.png" width="85" height="100" alt="" title="" /></a>
+          <a href="index.html"><img src="img/new/5_1.png" width="85" height="100" alt="Coffee Services Logo"
+              title="Coffee Services" /></a>
         </div>
         <nav id="nav-menu-container">
           <ul class="nav-menu">
             <li class="menu-active"><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="machines.html">Machines</a></li>
-            <li><a href="services.html">Our Services</a></li>
+            <li><a href="rent-free-machines.html">Rent free machines</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="coffee-tea-supplies.html">Coffee & Tea Supplies</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav><!-- #nav-menu-container -->
         <div class="hamburger">
-          <i class="fa fa-bars" onclick="javascript:toggleMenu()"></i>
+          <i class="fa fa-bars" onclick="toggleMenu()"></i>
         </div>
-
       </div>
     </div>
   </header>
   <!--Header end-->
 
   <div class="topspace"></div>
-  <section class="probootstrap-slider flexslider">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; z-index: 49;">
-      <div class="container">
-        <div class="">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="probootstrap-slider-text text-center">
-              <h1 class="probootstrap-heading probootstrap-animate mb20" data-animate-effect="fadeIn">Contact</h1>
 
+  <section class="probootstrap-section probootstrap-bg">
+    <div class="container text-center">
+      <h2 class="heading probootstrap-animate" data-animate-effect="fadeIn">Let's chat</h2>
 
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <ul class="slides">
-      <li style="background-image: url(img/coffee-2.jpg);"></li>
-      <li style="background-image: url(img/coffee-cup.jpg);"></li>
-    </ul>
   </section>
   <!-- END: slider  -->
-  <section class="probootstrap-section">
+  <section class="probootstrap-section probootstrap-bg">
     <div class="container">
-      <div class="container text-center">
-        <h2 class="heading probootstrap-animate" data-animate-effect="fadeIn">Let's chat</h2>
-      </div>
-      <div class="col-md-5">
-        <div>
-          <h4 class="price">Contact Information</h4>
-          <ul class="with-icon colored">
-            <li><i class="icon-location2"></i> <span>7 Heath Street, Burnside, Christchurch 8053</span></li>
-            <li><i class="icon-mail"></i><a class="email"
-                href="mailto:sales@coffeeservices.co.nz">sales@coffeeservices.co.nz</a></li>
-            <li><i class="icon-phone2"></i><span>0800 837 848</span></li>
-          </ul>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-info">
+            <h4 class="price">Contact Information</h4>
+            <ul class="with-icon colored">
+              <li><i class="fa fa-map-marker"></i> <span>7 Heath Street, Burnside, Christchurch 8053</span></li>
+              <li><i class="fa fa-envelope"></i> <a class="email"
+                  href="mailto:sales@coffeeservices.co.nz">sales@coffeeservices.co.nz</a></li>
+              <li><i class="fa fa-phone"></i> <span>0800 837 848</span></li>
+            </ul>
+          </div>
+
+
         </div>
-
-
-
-      </div>
-      <div class="col-md-5">
-        <div class="send-message">
-          <h4 class="price">Write to us!</h4>
-          <form name="htmlform" method="post" action="html_form_send.php">
-            <table width="450px">
-              </tr>
-              <tr>
-                <td valign="top">
-                  <label for="first_name">First Name *</label>
-                </td>
-                <td valign="top">
-                  <input type="text" name="first_name" maxlength="50" size="30">
-                </td>
-              </tr>
-
-              <tr>
-                <td valign="top"">
-  <label for=" last_name">Last Name *</label>
-                </td>
-                <td valign="top">
-                  <input type="text" name="last_name" maxlength="50" size="30">
-                </td>
-              </tr>
-              <tr>
-                <td valign="top">
-                  <label for="email">Email Address *</label>
-                </td>
-                <td valign="top">
-                  <input type="text" name="email" maxlength="80" size="30">
-                </td>
-
-              </tr>
-              <tr>
-                <td valign="top">
-                  <label for="telephone">Telephone Number</label>
-                </td>
-                <td valign="top">
-                  <input type="text" name="telephone" maxlength="30" size="30">
-                </td>
-              </tr>
-              <tr>
-                <td valign="top">
-                  <label for="comments">Comments *</label>
-                </td>
-                <td valign="top">
-                  <textarea name="comments" maxlength="1000" cols="30" rows="6"></textarea>
-                </td>
-
-              </tr>
-              <tr>
-                <td colspan="2" style="text-align:left">
-                  <input type="submit" value="Submit">
-                </td>
-              </tr>
-            </table>
-          </form>
+        <div class="col-md-6">
+          <div class="send-message">
+            <h4 class="price">Write to us!</h4>
+            <form name="htmlform" method="post" action="html_form_send.php">
+              <div class="form-group">
+                <label for="first_name">First Name *</label>
+                <input type="text" class="form-control" name="first_name" maxlength="50" required>
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name *</label>
+                <input type="text" class="form-control" name="last_name" maxlength="50" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" class="form-control" name="email" maxlength="80" required>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Telephone Number</label>
+                <input type="tel" class="form-control" name="telephone" maxlength="30">
+              </div>
+              <div class="form-group">
+                <label for="comments">Comments *</label>
+                <textarea name="comments" class="form-control" maxlength="1000" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -195,9 +216,7 @@
   <script src="js/mail-script.js"></script>
   <script src="js/main.js"></script>
   <script src="js/components.js"></script>
-
-
-
+  <script src="js/responsive.js"></script>
 
 
 </body>

@@ -4,12 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coffee Services</title>
-  <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-  <meta name="keywords"
-    content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+  <title>Coffee and Tea Vending</title>
+
   <link rel="shortcut icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Open+Sans:300,400" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles-merged.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -22,25 +20,74 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/x-icon" href="img/new/5_1.png">
+  <style>
+    .topspace {
+      margin-top: 20px;
+    }
+
+    .probootstrap-slider {
+      height: 400px;
+      background: url('img/services.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      font-size: 5em;
+      color: #ff6600;
+      /* Orange color */
+    }
+
+    .services.buy::before {
+      content: '\f217';
+      /* Font Awesome cart-plus icon */
+    }
+
+    .services.rent::before {
+      content: '\f4b8';
+      /* Font Awesome coffee icon */
+    }
+
+    .services.repair::before {
+      content: '\f013';
+      /* Font Awesome cogs icon */
+    }
+
+    .orange {
+      color: orange;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .text h5 {
+      margin: 5px 0;
+    }
+  </style>
   <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
+  <![endif]-->
   <!-- Global site tag (gtag.js) - Google Ads: 928323235 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-928323235"></script>
   <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-928323235'); </script>
 </head>
 
 <body>
-  <!--Header start-->
+  <!-- Header start -->
   <header id="header" id="home">
     <div class="header-top">
       <div class="container">
         <div class="row justify-content-end">
           <div class="col-lg-6 col-sm-4 col-8 header-top-right no-padding">
             <ul>
-              <li>Mon-Fri: 8am to 2pm</li>
-              <li>Sat-Sun: 11am to 4pm</li>
+              <li><a href="mailto:sales@coffeeandteavending.com.au">sales@coffeeandteavending.com.au</a></li>
               <li><a href="tel:(012) 6985 236 7512">(012) 6985 236 7512</a></li>
             </ul>
           </div>
@@ -57,7 +104,8 @@
             <li class="menu-active"><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="machines.html">Machines</a></li>
-            <li><a href="services.html">Our Services</a></li>
+            <li><a href="rent-free-machines.html">Rent free machines</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="coffee-tea-supplies.html">Coffee & Tea Supplies</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -65,11 +113,10 @@
         <div class="hamburger">
           <i class="fa fa-bars" onclick="javascript:toggleMenu()"></i>
         </div>
-
       </div>
     </div>
   </header>
-  <!--Header end-->
+  <!-- Header end -->
 
   <div class="topspace"></div>
 
@@ -81,80 +128,51 @@
 
   <section class="probootstrap-section probootstrap-bg">
     <div class="container text-center">
-      <h2 class="heading probootstrap-animate" data-animate-effect="fadeIn">Our Services</h2>
+      <h2 class="heading probootstrap-animate" data-animate-effect="fadeIn">Services</h2>
       <h5 class="text-center">Learn about the services we offer for</h5>
       <h5 class="text-center">workplace coffee machine</h5>
     </div>
   </section>
 
-
   <section class="probootstrap-section-grey">
     <div class="container">
       <div style="margin-top:40px">
-
         <div class="clearfix visible-lg-block visible-md-block"></div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-          <a href="buy.html">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="machines.html">
 
-
-            <div class="">
-              <figure class="center services"><img src="img/buy.webp" alt="Free Template by uicookies.com"
-                  class="auto-height img-responsive"></figure>
-              <div class="text">
-                <h5 class="text-center orange"><strong>Buy a machine</strong> </h5>
-                <h5 class="text-center">Buy a trusted</h5>
-                <h5 class="text-center">workplace coffee machine brand</h5>
-              </div>
+            <div class="text">
+              <i class="fa fa-dollar"></i>
+              <h5 class="text-center orange"><strong>Buy a machine</strong></h5>
+              <h5 class="text-center">Buy a trusted workplace coffee machine brand</h5>
             </div>
-
           </a>
         </div>
         <div class="clearfix visible-sm-block"></div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <a href="coffee-machines-rental.html">
 
-            <div class="">
-              <figure class="center services"><img src="img/coffee-service.png" class="auto-height img-responsive">
-              </figure>
-              <div class="text">
-                <h5 class="text-center orange"><strong>Rent a machine</strong></h5>
-                <h5 class="text-center">Choose from our</h5>
-                <h5 class="text-center">comprehensive range of</h5>
-                <h5 class="text-center">coffee & tea machines</h5>
-              </div>
+            <div class="text">
+              <h5 class="text-center orange"><strong>Rent a machine</strong></h5>
+              <h5 class="text-center">Choose from our comprehensive range of coffee & tea machines</h5>
             </div>
-
           </a>
-
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <a href="maintenance.html">
 
-            <div class="">
-              <figure class="center services"><img src="img/gear.png" class="auto-height img-responsive"></figure>
-              <div class="text">
-                <h5 class="text-center orange"><strong>Repair and maintenance</strong> </h5>
-                <h5 class="text-center">Our qualified technicians</h5>
-                <h5 class="text-center">respond quickly to any</h5>
-                <h5 class="text-center">fault issues</h5>
-              </div>
+            <div class="text">
+              <h5 class="text-center orange"><strong>Repair and maintenance</strong></h5>
+              <h5 class="text-center">Our qualified technicians respond quickly to any fault issues</h5>
             </div>
-
           </a>
-
-
         </div>
         <div class="clearfix visible-lg-block visible-md-block"></div>
       </div>
     </div>
   </section>
 
-
-
-
-  <!-- start footer Area -->
+  <!-- Start footer Area -->
   <footer-component></footer-component>
   <!-- End footer Area -->
 
@@ -163,7 +181,6 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
-
   <script src="js/easing.min.js"></script>
   <script src="js/hoverIntent.js"></script>
   <script src="js/superfish.min.js"></script>
