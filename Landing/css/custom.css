@@ -1,0 +1,102 @@
+.beans-background,
+.services-image {
+  background-size: cover;
+}
+selectors table tr,
+td,
+th {
+  border: 1px solid #fff;
+  padding: 0 5px;
+  text-align: center;
+  color: #fff;
+}
+.beans-background,
+.selectors {
+  padding-bottom: 0px;
+}
+.tick {
+  background-image: url(../img/check-box.png);
+}
+.consumable-content {
+  color: #000;
+}
+a.email:hover {
+  color: orange;
+}
+.services-content {
+  float: left;
+  padding-right: 20px;
+}
+.services {
+  margin-top: 0;
+}
+.probootstrap-footer .copyright p {
+  color: brown;
+}
+.machines {
+  width: 100%;
+}
+.flexslider.less-height {
+  height: 250px;
+}
+@media only screen and (max-width: 480px) {
+  .flexslider.less-height {
+    height: 800px;
+  }
+}
+.preset--color--foreground{
+  background-color: #282828;
+}
+.topbar li a,
+.topbar li span,
+.topbar li i {
+  color: #5b1405;
+  padding: 5px;
+}
+.link-color a {
+  color: brown;
+}
+img.about-us {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+}
+.machine-flexslider {
+  position: relative;
+  z-index: 2;
+  border: none;
+  margin: 0;
+  height: auto;
+  border-radius: 0;
+}
+.topbar li {
+  list-style: none;
+}
+.email-top {
+  float: right;
+}
+.head {
+  color: brown;
+  font-family: none;
+}
+.upper-section-right {
+  overflow: hidden;
+}
+.back-machines {
+  padding: 10px;
+  background: #5b1405;
+  width: 160px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.consumable-content {
+  margin-bottom: 20px;
+}
+
+.probootstrap-footer > .container {
+  margin-top: 20px;
+}

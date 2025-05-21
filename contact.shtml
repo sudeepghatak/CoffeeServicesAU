@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P77M36MS');</script>
+<!-- End Google Tag Manager -->  
+	<title>Contact Us | Advantage Vending Systems</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Web Fonts -->
+	<link rel='stylesheet' type='text/css'
+		href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="assets/css/headers/header-v6.css">
+	<link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="assets/plugins/animate.css">
+	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+	<!-- CSS Pages Style -->
+	<link rel="stylesheet" href="assets/css/pages/page_contact.css">
+
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<!-- Global site tag (gtag.js) - Google Ads: GTAGNUMBER -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-GTAGNUMBER"></script>
+	<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-GTAGNUMBER'); </script>
+</head>
+<!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMF8WD67"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) -->
+<body class="header-fixed header-fixed-space">
+	<div class="wrapper">
+		<!--=== Header v6 ===-->
+
+		<div class="header-v6 header-white-transparent header-sticky">
+
+			<!-- Navbar -->
+
+			<div class="navbar mega-menu" role="navigation">
+
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+
+					<div class="menu-container">
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-responsive-collapse">
+
+							<span class="sr-only">Toggle navigation</span>
+
+							<span class="icon-bar"></span>
+
+							<span class="icon-bar"></span>
+
+							<span class="icon-bar"></span>
+
+						</button>
+
+
+
+						<!-- Navbar Brand -->
+
+						<div class="navbar-brand">
+
+							<a href="index.html">
+
+								<img class="default-logo" src="assets/img/logo_main.png" alt="Logo">
+
+								<img class="shrink-logo" src="assets/img/logo_main.png" alt="Logo">
+
+							</a>
+
+						</div>
+
+						<!-- ENd Navbar Brand -->
+
+
+
+					</div>
+
+
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+
+						<div class="menu-container">
+
+							<ul class="nav navbar-nav">
+
+								<li><a href="index.shtml">
+
+										<span class="label-nav">
+
+											Home
+
+										</span>
+
+										<span class="label-nav-sub" data-hover="About Us">
+
+											About Us
+
+										</span>
+
+									</a> </li>
+
+								<li><a href="product.shtml">
+
+										<span class="label-nav">
+
+											Products
+
+										</span>
+
+										<span class="label-nav-sub" data-hover="Service">
+
+											Machines
+
+										</span>
+
+									</a> </li>
+
+								<li><a href="contact.shtml">
+
+										<span class="label-nav">
+
+											Contact
+
+										</span>
+
+										<span class="label-nav-sub" data-hover="Enquiry">
+
+											Enquiries
+
+										</span>
+
+									</a> </li>
+
+							</ul>
+
+						</div>
+
+					</div><!--/navbar-collapse-->
+
+				</div>
+
+			</div>
+
+			<!-- End Navbar -->
+
+		</div>
+
+		<!--=== End Header v6 ===-->
+
+		<!--
+		<div class="breadcrumbs">
+			<div class="container">
+				<h1 class="pull-left">Our Contacts</h1>
+				<ul class="pull-right breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li class="active">Contacts</li>
+				</ul>
+			</div>
+		</div>-->
+
+		<!-- Google Map -->
+		<div id="map" class="map">
+		</div><!---/map-->
+		<!-- End Google Map -->
+
+
+
+		<!--=== Content Part ===-->
+		<div class="container content">
+			<div class="row margin-bottom-30">
+				<div class="col-md-9 mb-margin-bottom-30">
+					<div class="headline">
+						<h2>Contact Form</h2>
+					</div>
+					<form action="demo-contacts-process.php" method="post" id="sky-form3"
+						class="sky-form contact-style">
+						<fieldset class="no-padding">
+							<label>Product <span class="color-red">*Please select the product you are
+									interested.</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-12 col-md-offset-0">
+									<div class="form-group">
+										<select name=product clss="form-control">
+											<option value="BreakTIME 100FD, INSTANT Coffee/Granulated Milk">Coffee
+												Machines:BreakTIME 100FD, INSTANT Coffee/Granulated Milk
+											<option value="KRONO INSTANT Coffee/Granulated Milk" selected>Coffee
+												Machines:KRONO INSTANT Coffee/Granulated Milk
+											<option value="BreakTIME 101A INSTANT Coffee/Granulated Milk">Coffee
+												Machines:BreakTIME 101A INSTANT Coffee/Granulated Milk
+											<option value="Colibri Fresh Beans/Granulated Milk">Coffee Machines:Colibri
+												Fresh Beans/Granulated Milk
+											<option value="MEROL ME710 Fresh Bean/Milk">Coffee Machines:MEROL ME710
+												Fresh Bean/Milk
+											<option value="Unolux Pod Espresso">Coffee Machines:Unolux Pod Espresso
+											<option value="Korinto Fresh Bean/milk">Coffee Machines:Korinto Fresh
+												Bean/milk
+											<option value="Solista Fresh Bean/Granulated Milk">Coffee Machines:Solista
+												Fresh Bean/Granulated Milk
+											<option value="KORO Fresh Bean/Milk">Coffee Machines:KORO Fresh Bean/Milk
+											<option value="KORO MAX Fresh Bean/Milk">Coffee Machines:KORO MAX Fresh
+												Bean/Milk
+											<option value="REGILAIT GRANULATED MILK">Consumables:REGILAIT GRANULATED
+												MILK
+											<option value="Hot Chocolate">Consumables:Hot Chocolate
+											<option value="Coffe Beans">Consumables:Coffe Beans
+											<option value="Descaling & Cleaning Accessories">Accessory:Descaling &
+												Cleaning Accessories
+											<option value="Filter Rolls And Papers">Accessory:Filter Rolls And Papers
+											<option value="Vending Cups & Lids">Accessory:Vending Cups & Lids
+											<option value="WAECO TMF55 & 15S">Fridge:WAECO TMF55 & 15S
+											<option value="WAECO MF6W">Fridge:WAECO MF6W
+										</select>
+									</div>
+
+
+									</select>
+
+
+								</div>
+							</div>
+
+
+
+							<label>Name <span class="color-red">*</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-7 col-md-offset-0">
+									<div>
+										<input type="text" name="name" id="name" class="form-control">
+									</div>
+								</div>
+							</div>
+
+
+							<label>Company <span class="color-red">*</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-7 col-md-offset-0">
+									<div>
+										<input type="text" name="company" id="company" class="form-control">
+									</div>
+								</div>
+							</div>
+
+							<label>Email <span class="color-red">*</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-7 col-md-offset-0">
+									<div>
+										<input type="text" name="email" id="email" class="form-control">
+									</div>
+								</div>
+							</div>
+
+							<label>Phone <span class="color-red">*</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-7 col-md-offset-0">
+									<div>
+										<input type="text" name="phone" id="phone" class="form-control">
+									</div>
+								</div>
+							</div>
+
+							<label>Location<span class="color-red">*</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-7 col-md-offset-0">
+									<div>
+										<input type="text" name="location" id="location" class="form-control">
+									</div>
+								</div>
+							</div>
+
+							<label>Message <span class="color-red">*</span></label>
+							<div class="row sky-space-20">
+								<div class="col-md-11 col-md-offset-0">
+									<div>
+										<textarea rows="8" name="message" id="message" class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+
+							<p><button type="submit" class="btn-u">Send Message</button></p>
+						</fieldset>
+
+						<div class="message">
+							<i class="rounded-x fa fa-check"></i>
+							<p>Your message was successfully sent!</p>
+						</div>
+					</form>
+				</div><!--/col-md-9-->
+
+				<div class="col-md-3">
+					<!-- Contacts -->
+					<div class="headline">
+						<h2>Contacts</h2>
+					</div>
+					<ul class="list-unstyled who margin-bottom-30">
+						<li><a href="#"><i class="fa fa-home"></i>117 Main South Road, Sockburn Christchurch, New
+								Zealand</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i>info@advantagevending.co.nz</a></li>
+						<li><a href="#"><i class="fa fa-globe"></i>www.advantagevending.co.nz</a></li>
+					</ul>
+
+					<!-- Business Hours -->
+					<div class="headline">
+						<h2>Business Hours</h2>
+					</div>
+					<ul class="list-unstyled margin-bottom-30">
+						<li><strong>Monday-Friday:</strong> 5pm to 8pm</li>
+						<li><strong>Saturday:</strong> Closed</li>
+						<li><strong>Sunday:</strong> Closed</li>
+					</ul>
+
+				</div><!--/col-md-3-->
+			</div><!--/row-->
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div><!--/wrapper-->
+
+	<!--=== Footer Version 1 ===-->
+	<div class="footer-v1">
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<!-- About -->
+					<div class="col-md-4 md-margin-bottom-40">
+						<a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo_footer.png"
+								alt=""></a>
+						<p>Advantage Vending Systems specialises in the sales and renting of automatic coffee and hot
+							drink machinery throughout Canterbury and New Zealand.</p>
+
+					</div><!--/col-md-3-->
+					<!-- End About -->
+
+
+					<!-- Link List -->
+					<div class="col-md-4 md-margin-bottom-40">
+						<div class="headline">
+							<h2>Useful Links</h2>
+						</div>
+						<ul class="list-unstyled link-list">
+							<li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+							<li><a href="#">Partners</a><i class="fa fa-angle-right"></i></li>
+							<li><a href="contact.shtml">Contact us</a><i class="fa fa-angle-right"></i></li>
+						</ul>
+					</div><!--/col-md-3-->
+					<!-- End Link List -->
+
+					<!-- Address -->
+					<div class="col-md-4 map-img md-margin-bottom-40">
+						<div class="headline">
+							<h2>Contact Us</h2>
+						</div>
+						<address class="md-margin-bottom-40">
+							117 Main South Road <br />
+							Sockburn<br />
+							Christchurch 8041 New Zealand<br />
+							Phone: 027 4310 061 <br />
+							Email: <a href="mailto:info@anybiz.com" class="">info@advantagevending.co.nz</a>
+						</address>
+					</div><!--/col-md-3-->
+					<!-- End Address -->
+				</div>
+			</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<p>
+							2016 &copy; Advantage Vending Systems All Rights Reserved. Developed By <a
+								href="http://www.epass.co.nz">EPASS Web Services</a>
+							<a href="#">Terms & Privacy</a>
+						</p>
+					</div>
+					<!-- Social Links -->
+					<div class="col-md-4">
+						<ul class="social-icons pull-right">
+							<li><a href="https://www.facebook.com/" data-original-title="Facebook"
+									class="rounded-x social_facebook"></a></li>
+							<li><a href="https://www.youtube.com/" data-original-title="Youtube"
+									class="rounded-x social_youtube"></a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--=== End Footer v6 ===-->
+
+
+
+
+
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+	<script type="text/javascript"
+		src="http://maps.google.com/maps/api/js?key=AIzaSyD3c5_SCrdm1ZXPYmxtvIl6GKPgaEm002E"></script>
+	<script type="text/javascript" src="assets/plugins/gmap/gmap.js"></script>
+	<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/forms/contact.js"></script>
+	<script type="text/javascript" src="assets/js/pages/page_contacts.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			App.init();
+			ContactPage.initMap();
+			ContactForm.initContactForm();
+			OwlCarousel.initOwlCarousel();
+		});
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
+
+</body>
+
+</html>

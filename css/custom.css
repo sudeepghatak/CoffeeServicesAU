@@ -1,0 +1,530 @@
+.beans-background,
+.services-image {
+  background-size: cover;
+}
+
+selectors table tr,
+td,
+th {
+  border: 1px solid #fff;
+  padding: 0 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.beans-background,
+.selectors {
+  padding-bottom: 0px;
+}
+
+.tick {
+  background-image: url(../img/check-box.png);
+}
+
+.consumable-content {
+  color: #000;
+}
+
+a.email:hover {
+  color: orange;
+}
+
+.services-content {
+  float: left;
+  padding-right: 20px;
+}
+
+.services {
+  margin-top: 0;
+  text-align: center;
+}
+
+.probootstrap-footer .copyright p {
+  color: brown;
+}
+
+.machines {
+  width: 100%;
+}
+
+.flexslider.less-height {
+  height: 250px;
+}
+
+@media only screen and (max-width: 480px) {
+  .flexslider.less-height {
+    height: 800px;
+  }
+}
+
+.topbar li a,
+.topbar li span,
+.topbar li i {
+  color: #5b1405;
+  padding: 5px;
+}
+
+.link-color a {
+  color: brown;
+}
+
+img.about-us {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.machine-flexslider {
+  position: relative;
+  z-index: 0;
+  border: none;
+  margin: 0;
+  height: auto;
+  border-radius: 0;
+}
+
+.topbar li {
+  list-style: none;
+}
+
+.email-top {
+  float: right;
+}
+
+.head {
+  color: brown;
+  font-family: none;
+}
+
+.upper-section-right {
+  overflow: hidden;
+}
+
+.back-machines {
+  padding: 10px;
+  background: #5b1405;
+  width: 160px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.consumable-content {
+  margin-bottom: 20px;
+}
+
+.probootstrap-footer>.container {
+  margin-top: 20px;
+}
+
+/*New styles*/
+.now-available {
+  color: red;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  z-index: 100;
+  display: none;
+}
+
+.cnt223 {
+  min-width: 30%;
+  min-height: 150px;
+  margin: 100px auto;
+  background: white;
+  position: relative;
+  z-index: 103;
+  padding: 15px 35px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #000;
+  width: 40%;
+}
+
+.cnt223 a {
+  text-decoration: none;
+}
+
+.cnt223 img {
+  width: 50%;
+}
+
+.cnt223 p {
+  clear: both;
+  color: #555555;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.cnt223 p a {
+  color: #d91900;
+  font-weight: bold;
+}
+
+.cnt223 .x {
+  float: right;
+  height: 35px;
+  left: 22px;
+  position: relative;
+  top: -25px;
+  width: 34px;
+}
+
+.cnt223 .x:hover {
+  cursor: pointer;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.close {
+  float: right;
+  color: black;
+}
+
+a.close:link {
+  color: black;
+}
+
+.probootstrap-header {
+  position: relative;
+  z-index: 1000;
+  /* Ensure the header is above other elements */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(20, 2, 0, 1);
+}
+
+.probootstrap-header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.probootstrap-header .logo {
+  max-height: 110px;
+}
+
+.probootstrap-nav {
+  display: flex;
+  align-items: center;
+}
+
+.probootstrap-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.probootstrap-main-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.probootstrap-main-nav li a {
+  text-decoration: none;
+}
+
+.probootstrap-main-nav li a {
+  color: #000;
+}
+
+.probootstrap-main-nav li a.btn-primary {
+  background-color: orange;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.probootstrap-main-nav li a.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.probootstrap-main-nav li a {
+  color: #fff;
+}
+
+.probootstrap-slider {
+  position: relative;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-us {
+  width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.text {
+  text-align: center;
+}
+
+.xxxl {
+  font-size: 64px !important;
+}
+
+.flexheight-min {
+  height: 160px;
+}
+
+.height-fifty {
+  padding-top: 50px;
+}
+
+.about-us-banner {
+  position: absolute;
+  top: 170px;
+  left: 0;
+}
+
+.about-us-banner-ad {
+
+  width: 235px;
+  text-align: center;
+  color: white;
+  border: 10px solid white;
+  border-radius: 50%;
+  height: 235px;
+  padding-top: 20px;
+
+}
+
+.about-us-banner-heading {
+  text-align: center;
+  top: 170px;
+  color: orange;
+  font-weight: bold;
+}
+
+
+.banner-form {
+  position: absolute;
+  top: 170px;
+  right: 0;
+}
+
+.banner-form h2 {
+  color: #fff;
+}
+
+.banner-form form .form-group label {
+  font-size: 14px;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+}
+
+.banner-form form .form-group input {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  padding: 10px;
+}
+
+.banner-form form .form-group input:focus {
+  outline: none;
+}
+
+.banner-form form .form-group textarea {
+  width: 100%;
+  padding: 7px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.banner-form form .form-group input[type="submit"] {
+  background: #ffa500;
+  color: #fff;
+  line-height: 18px;
+}
+
+
+.btn-floating {
+  position: fixed;
+  right: 20px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: .2s;
+}
+
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-floating span {
+  font-size: 16px;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
+}
+
+.btn-floating:hover span {
+  display: inline-block;
+}
+
+/* Phone */
+.btn-floating.phone {
+  bottom: 85px;
+  background-color: #ffa500;
+}
+
+.btn-floating.phone:hover {
+  background-color: #ffa500;
+}
+
+.btn-floating.phone {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media(max-width: 767px) {
+  .btn-floating.phone {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .about-us-banner-ad {
+    margin: 20px auto;
+  }
+
+  .about-us-banner {
+    right: 0;
+  }
+
+  img.about-us {
+    height: 1046px;
+  }
+
+  .banner-form {
+    padding: 20px;
+  }
+
+  .probootstrap-slider {
+    position: relative;
+    height: auto;
+    /* background: #381410; */
+  }
+
+  /* img.about-us {
+    opacity: 0;
+    visibility: hidden;
+  } */
+  img.about-us {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .banner-form {
+    top: 440px;
+  }
+}
+
+/* General Dropdown Menu Styles */
+.nav-menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1050; /* Ensure dropdown menus are above the header */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-menu .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Ensure submenus are positioned correctly */
+.nav-menu .dropdown-submenu {
+  position: relative;
+}
+
+.nav-menu .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  border-left: 1px solid #ddd;
+  z-index: 1050; /* Ensure submenus are above other elements */
+}
+
+/* Mobile-Friendly Dropdown Behavior */
+@media (max-width: 768px) {
+  .nav-menu .dropdown-menu {
+    position: static;
+    display: none;
+    /* Hidden by default */
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+  }
+
+  .nav-menu .dropdown:hover>.dropdown-menu {
+    display: none;
+    /* Disable hover behavior on mobile */
+  }
+
+  .nav-menu .dropdown.open>.dropdown-menu {
+    display: block;
+    /* Show dropdown when toggled */
+  }
+
+  .nav-menu .dropdown-submenu .dropdown-menu {
+    position: static;
+    border-left: none;
+  }
+}
+
+/* Accessibility Enhancements */
+.nav-menu .dropdown-menu>li>a:focus {
+  background-color: #f8f9fa;
+  color: #000;
+  outline: none;
+}
+
+/* Ensure the container does not clip the dropdown menus */
+.container {
+  overflow: visible; /* Allow dropdown menus to overflow the container */
+}
